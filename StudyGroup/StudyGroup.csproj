@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="InternalTest">
+      <HintPath>..\InternalTest\bin\Debug\netstandard2.0\InternalTest.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,7 +49,6 @@
     <Compile Include="KeywordTests\AbstractTest.cs" />
     <Compile Include="KeywordTests\IInterfacesTest.cs" />
     <Compile Include="KeywordTests\InheritanceTest\ParentClass.cs" />
-    <Compile Include="KeywordTests\InternalTest.cs" />
     <Compile Include="KeywordTests\SealedTest.cs" />
     <Compile Include="MainTestingClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

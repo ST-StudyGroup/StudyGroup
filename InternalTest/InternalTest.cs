@@ -2,7 +2,7 @@
 
 namespace InternalTest
 {
-    internal class InternalTest
+    internal class InternalTestClass
     {
         public string InternalTestMethod()
         {
@@ -10,13 +10,13 @@ namespace InternalTest
         }
     }
 
-    public class InternalTestWithinDLL 
+    public class InternalTestWithinDLLClass
     {
-        InternalTest internalTest = new InternalTest();
+        InternalTestClass internalTestClass = new InternalTestClass(); // ** Can be instantiated because it's a class within the same assembly **
 
-        public void InternalTestPrintStatement()
+        public void InternalTestClassMethod()
         {
-            Console.WriteLine(internalTest.InternalTestMethod());
+            Console.WriteLine(internalTestClass.InternalTestMethod());
         }
     }
 }
