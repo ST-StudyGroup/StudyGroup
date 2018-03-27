@@ -1,0 +1,9 @@
+C:\Repos\StudyGroup\InternalTest\bin\Debug\netstandard2.0\InternalTest.deps.json
+C:\Repos\StudyGroup\InternalTest\bin\Debug\netstandard2.0\InternalTest.dll
+C:\Repos\StudyGroup\InternalTest\bin\Debug\netstandard2.0\InternalTest.pdb
+C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.csprojResolveAssemblyReference.cache
+C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.csproj.CoreCompileInputs.cache
+C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.AssemblyInfoInputs.cache
+C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.AssemblyInfo.cs
+C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.dll
+C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.pdb

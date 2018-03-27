@@ -1,0 +1,7 @@
+C:\Users\mheyner\Documents\Visual Studio 2017\Projects\StudyGroup\StudyGroup\bin\Debug\StudyGroup.exe.config
+C:\Users\mheyner\Documents\Visual Studio 2017\Projects\StudyGroup\StudyGroup\bin\Debug\StudyGroup.exe
+C:\Users\mheyner\Documents\Visual Studio 2017\Projects\StudyGroup\StudyGroup\bin\Debug\StudyGroup.pdb
+C:\Users\mheyner\Documents\Visual Studio 2017\Projects\StudyGroup\StudyGroup\obj\Debug\StudyGroup.csprojResolveAssemblyReference.cache
+C:\Users\mheyner\Documents\Visual Studio 2017\Projects\StudyGroup\StudyGroup\obj\Debug\StudyGroup.csproj.CoreCompileInputs.cache
+C:\Users\mheyner\Documents\Visual Studio 2017\Projects\StudyGroup\StudyGroup\obj\Debug\StudyGroup.exe
+C:\Users\mheyner\Documents\Visual Studio 2017\Projects\StudyGroup\StudyGroup\obj\Debug\StudyGroup.pdb
