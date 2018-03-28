@@ -30,15 +30,15 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "iigHSIPXwdIafUnWtAlOWmu6eUiYOg3xFAzYFT1LpOH1A7QCd5+M3ck4NSxV7doV1sCb/S7EIz6Gd94rtp13aQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        "Microsoft.NETCore.Platforms.1.1.0.nupkg.sha512",
+        "Microsoft.NETCore.Platforms.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-        "microsoft.netcore.platforms.nuspec",
         "runtime.json"
       ]
     },
@@ -178,23 +178,29 @@
   },
   "packageFolders": {
     "C:\\Users\\mheyner\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Repos\\StudyGroup\\InternalTest\\InternalTest.csproj",
+      "projectUniqueName": "C:\\repos\\StudyGroup\\StudyGroup\\InternalTest\\InternalTest.csproj",
       "projectName": "InternalTest",
-      "projectPath": "C:\\Repos\\StudyGroup\\InternalTest\\InternalTest.csproj",
+      "projectPath": "C:\\repos\\StudyGroup\\StudyGroup\\InternalTest\\InternalTest.csproj",
       "packagesPath": "C:\\Users\\mheyner\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\StudyGroup\\InternalTest\\obj\\",
+      "outputPath": "C:\\repos\\StudyGroup\\StudyGroup\\InternalTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\mheyner\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

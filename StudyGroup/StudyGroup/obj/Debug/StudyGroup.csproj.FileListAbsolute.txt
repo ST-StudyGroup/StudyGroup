@@ -10,3 +10,8 @@ C:\Repos\StudyGroup\StudyGroup\obj\Debug\StudyGroup.exe.config
 C:\Repos\StudyGroup\StudyGroup\obj\Debug\StudyGroup.csproj.CoreCompileInputs.cache
 C:\Repos\StudyGroup\StudyGroup\obj\Debug\StudyGroup.exe
 C:\Repos\StudyGroup\StudyGroup\obj\Debug\StudyGroup.pdb
+C:\repos\StudyGroup\StudyGroup\StudyGroup\obj\Debug\StudyGroup.csprojResolveAssemblyReference.cache
+C:\repos\StudyGroup\StudyGroup\StudyGroup\obj\Debug\StudyGroup.exe.config
+C:\repos\StudyGroup\StudyGroup\StudyGroup\obj\Debug\StudyGroup.csproj.CoreCompileInputs.cache
+C:\repos\StudyGroup\StudyGroup\StudyGroup\obj\Debug\StudyGroup.exe
+C:\repos\StudyGroup\StudyGroup\StudyGroup\obj\Debug\StudyGroup.pdb
