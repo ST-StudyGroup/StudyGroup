@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KeywordTests\CheckedTest.cs" />
     <Compile Include="KeywordTests\InheritanceTest\InheritanceTest.cs" />
     <Compile Include="KeywordTests\AbstractTest.cs" />
     <Compile Include="KeywordTests\IInterfacesTest.cs" />

@@ -7,3 +7,12 @@ C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.AssemblyI
 C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.AssemblyInfo.cs
 C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.dll
 C:\Repos\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.pdb
+C:\repos\StudyGroup\StudyGroup\InternalTest\bin\Debug\netstandard2.0\InternalTest.deps.json
+C:\repos\StudyGroup\StudyGroup\InternalTest\bin\Debug\netstandard2.0\InternalTest.dll
+C:\repos\StudyGroup\StudyGroup\InternalTest\bin\Debug\netstandard2.0\InternalTest.pdb
+C:\repos\StudyGroup\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.csprojResolveAssemblyReference.cache
+C:\repos\StudyGroup\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.csproj.CoreCompileInputs.cache
+C:\repos\StudyGroup\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.AssemblyInfoInputs.cache
+C:\repos\StudyGroup\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.AssemblyInfo.cs
+C:\repos\StudyGroup\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.dll
+C:\repos\StudyGroup\StudyGroup\InternalTest\obj\Debug\netstandard2.0\InternalTest.pdb
