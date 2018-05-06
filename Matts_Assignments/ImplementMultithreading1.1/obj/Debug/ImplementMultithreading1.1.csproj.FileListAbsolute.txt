@@ -1,0 +1,7 @@
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\bin\Debug\ImplementMultithreading1.1.exe.config
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\bin\Debug\ImplementMultithreading1.1.exe
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\bin\Debug\ImplementMultithreading1.1.pdb
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\obj\Debug\ImplementMultithreading1.1.csprojResolveAssemblyReference.cache
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\obj\Debug\ImplementMultithreading1.1.csproj.CoreCompileInputs.cache
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\obj\Debug\ImplementMultithreading1.1.exe
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\obj\Debug\ImplementMultithreading1.1.pdb
