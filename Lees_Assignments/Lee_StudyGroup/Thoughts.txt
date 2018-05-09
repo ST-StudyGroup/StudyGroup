@@ -1,0 +1,5 @@
+#Threading
+
+Resources: http://www.albahari.com/threading/
+
+Calling a .Join on a thread is like calling an await on an async method - thoughts? 

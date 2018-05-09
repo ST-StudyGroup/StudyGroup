@@ -1,0 +1,7 @@
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\Lee_StudyGroup\bin\Debug\Lee_StudyGroup.exe.config
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\Lee_StudyGroup\bin\Debug\Lee_StudyGroup.exe
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\Lee_StudyGroup\bin\Debug\Lee_StudyGroup.pdb
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\Lee_StudyGroup\obj\Debug\Lee_StudyGroup.csprojResolveAssemblyReference.cache
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\Lee_StudyGroup\obj\Debug\Lee_StudyGroup.csproj.CoreCompileInputs.cache
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\Lee_StudyGroup\obj\Debug\Lee_StudyGroup.exe
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\Lee_StudyGroup\obj\Debug\Lee_StudyGroup.pdb

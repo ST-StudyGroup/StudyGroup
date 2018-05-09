@@ -5,6 +5,13 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lee_StudyGroup", "Lee_StudyGroup\Lee_StudyGroup.csproj", "{81BCD4B1-CFD3-4DE6-B3DA-EF9658DC3709}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTreadingProject", "MyTreadingProject\MyTreadingProject.csproj", "{6675D868-E464-4E88-A3D5-82358036097E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EA59B23C-A22C-489C-A16C-126002D2E771}"
+	ProjectSection(SolutionItems) = preProject
+		Thoughts.txt = Thoughts.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{81BCD4B1-CFD3-4DE6-B3DA-EF9658DC3709}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81BCD4B1-CFD3-4DE6-B3DA-EF9658DC3709}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81BCD4B1-CFD3-4DE6-B3DA-EF9658DC3709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6675D868-E464-4E88-A3D5-82358036097E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6675D868-E464-4E88-A3D5-82358036097E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6675D868-E464-4E88-A3D5-82358036097E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6675D868-E464-4E88-A3D5-82358036097E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

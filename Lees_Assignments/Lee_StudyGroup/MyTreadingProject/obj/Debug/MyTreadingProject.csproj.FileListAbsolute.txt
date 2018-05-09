@@ -1,0 +1,7 @@
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\MyTreadingProject\bin\Debug\MyTreadingProject.exe.config
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\MyTreadingProject\bin\Debug\MyTreadingProject.exe
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\MyTreadingProject\bin\Debug\MyTreadingProject.pdb
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\MyTreadingProject\obj\Debug\MyTreadingProject.csprojResolveAssemblyReference.cache
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\MyTreadingProject\obj\Debug\MyTreadingProject.csproj.CoreCompileInputs.cache
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\MyTreadingProject\obj\Debug\MyTreadingProject.exe
+C:\StudyGroup\Lees_Assignments\Lee_StudyGroup\MyTreadingProject\obj\Debug\MyTreadingProject.pdb
