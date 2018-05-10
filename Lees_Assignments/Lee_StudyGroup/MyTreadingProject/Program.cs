@@ -9,13 +9,50 @@ namespace MyTreadingProject
 {
     class ThreadTest
     {
+        #region :: Variables
         static bool done;
 
         static readonly object locker = new object();
         // public delegate void ThreadStart();
 
+        //For Chapter Example 1.5
+        //[ThreadStatic]
+        //public static int _field;
+
+        //For ChapterExample 1.6
+        //public static ThreadLocal<int> __threadId =
+        //    new ThreadLocal<int>(() =>
+        //    {
+        //        return Thread.CurrentThread.ManagedThreadId;
+        //    });
+
+        public static ThreadLocal<string> __threadName =
+            new ThreadLocal<string>(() =>
+            {
+                return Thread.CurrentThread.Name;
+            });
+        public static ThreadLocal<ThreadPriority> __threadPriority =
+            new ThreadLocal<ThreadPriority>(() =>
+            {
+                return Thread.CurrentThread.Priority;
+            });
+
+        public static ThreadLocal<int> _threadMillisecond =
+            new ThreadLocal<int>(() =>
+            {
+                return DateTime.UtcNow.Millisecond;
+            });
+
+        public static ThreadLocal<ThreadState> _threadingState =
+            new ThreadLocal<ThreadState>(() =>
+            {
+                return Thread.CurrentThread.ThreadState;
+            });
+        #endregion
+
         static void Main(string[] args)
         {
+            #region :: Threading in C# E Book
             //Thread t = new Thread(WriteY);
             //t.Start();
 
@@ -54,7 +91,9 @@ namespace MyTreadingProject
             //    new Thread(() => Console.Write(temp)).Start();
             //}
 
-            //****************************Chapter 1 Examples*********************************//
+            #endregion
+
+            #region :: Chapter 1 Examples
 
             //Example 1.1
             //Thread t = new Thread(c => ThreadMethod(0));
@@ -81,31 +120,239 @@ namespace MyTreadingProject
 
             //Example 1.4 Stopping a Thread
 
-            bool stopped = false;
+            //bool stopped = false;
 
-            Thread t = new Thread(new ThreadStart(() =>
+            //Thread t = new Thread(new ThreadStart(() =>
+            //    {
+            //        while (!stopped)
+            //        {
+            //            Console.WriteLine("Running...");
+            //            Thread.Sleep(1000);
+            //        }
+            //    }));
+
+
+            //t.Start();
+
+            ////t.IsBackground = true;
+            ////Demonstrate - as long as foreground thread is running, background will continue
+            ////If you comment out the main thread below it should stop immediately (must comment out Join too)
+            //Console.WriteLine("Press any key to exit...");
+            //Console.ReadKey();
+
+            //stopped = true;
+            //t.Join();
+
+            //Example 1.5 Using the Thread Static Attribute 
+            //With the ThreadStaticAttribute applied, the maximum value of _field becomes 10. 
+            //If you remove it, you can see that both threads access the same value and it becomes 20.
+
+            //new Thread(() =>
+            //{
+            //    for (int x = 0; x < 10; x++)
+            //    {
+            //        _field++;
+            //        Console.WriteLine($"Thread A: {_field}");
+            //    }
+            //}).Start();
+
+            //new Thread(() =>
+            //{
+            //    for (int x = 0; x < 10; x++)
+            //    {
+            //        _field++;
+            //        Console.WriteLine($"Thread B: {_field}");
+            //    }
+            //}).Start();
+
+            //Example 1.6 Using Threading Local
+            //new Thread(() =>
+            //{
+            //    for (int x = 0; x < __threadId.Value; x++)
+            //    {
+            //        Console.WriteLine($"Thread A Id: {__threadId} Count: {x}");
+            //    }
+            //}).Start();
+
+            //new Thread(() =>
+            //{
+            //    for (int x = 0; x < __threadId.Value; x++)
+            //    {
+            //        Console.WriteLine($"Thread B Id: {__threadId} Count: {x}");
+            //    }
+            //}).Start();
+
+
+            //Example 1.7 Using the TreadPool
+            //ThreadPool.QueueUserWorkItem((s) =>
+            //{
+            //    Console.WriteLine("Working on thread pool");
+            //});
+
+            //Console.ReadLine();
+
+            //Example 1.8 Starting a new task
+            //Task t = Task.Run(() =>
+            //    {
+            //        for (int x = 0; x < 100; x++)
+            //        {
+            //            Console.Write('*');
+            //            Thread.Sleep(100);
+            //        }
+            //    });
+
+            //t.Wait();
+            //Console.WriteLine("howdy");
+
+            //Example 1.9 Using a task that returns a value
+            //Task<int> task = Task.Run(() =>
+            //{
+            //    return 42;
+            //});
+
+            //Console.WriteLine(task.Result);
+
+            //Example 1.10 Adding Continuation
+            //Task<int> t2 = Task.Run(() =>
+            //{
+            //    return 42;
+            //}).ContinueWith((i) =>
+            //{
+            //    return i.Result * 2;
+            //});
+
+            //Console.WriteLine(t2.Result);
+
+            //Example 1.11 Scheduling Different Continuation Tasks
+            //Task<int> t = Task.Run(() =>
+            //{
+            //    return 42;
+            //});
+
+            //t.ContinueWith((i) =>
+            //{
+            //    Console.WriteLine("Cancelled");
+            //}, TaskContinuationOptions.OnlyOnCanceled);
+
+            //t.ContinueWith((i) =>
+            //{
+            //    Console.WriteLine("Faulted");
+            //}, TaskContinuationOptions.OnlyOnFaulted);
+
+            //var completedTask = t.ContinueWith((i) =>
+            //{
+            //    Console.WriteLine("Completed");
+            //}, TaskContinuationOptions.OnlyOnRanToCompletion);
+
+            //completedTask.Wait();
+
+
+            /*****************************************************************************/
+            //Example 1.12 Attaching Child Tasks
+            //Task<Int32[]> parent = Task.Run(() =>
+            //{
+            //    var results = new Int32[3];
+            //    new Task(() => results[0] = 0,
+            //        TaskCreationOptions.AttachedToParent).Start();
+            //    new Task(() => results[1] = 1,
+            //        TaskCreationOptions.AttachedToParent).Start();
+            //    new Task(() => results[2] = 2,
+            //        TaskCreationOptions.AttachedToParent).Start();
+
+            //    return results;
+            //});
+
+            //var finalTask = parent.ContinueWith(
+            //    parentTask =>
+            //    {
+            //        foreach (int i in parentTask.Result)
+            //        {
+            //            Console.WriteLine(i);
+            //        }
+            //    });
+
+            //finalTask.Wait();
+
+            /*****************************************************************************/
+
+            //Example 1.13 TaskFactory
+
+            //int arrayCount = 3;
+
+            Task<Int32[]> parent = Task.Run(() =>
+            {
+                var results = new Int32[3];
+
+                TaskFactory tf = new TaskFactory(TaskCreationOptions.AttachedToParent, TaskContinuationOptions.ExecuteSynchronously);
+
+                tf.StartNew(() => results[0] = 0);
+                tf.StartNew(() => results[1] = 1);
+                tf.StartNew(() => results[2] = 2);
+
+                
+                //Why Doesn't this work?
+
+                //for (int x = 0; x < 3; x++)
+                //{
+                //    tf.StartNew(() => results[x] = x);
+                //}
+
+                return results;
+
+            });
+
+            var finalTask = parent.ContinueWith(
+                parentTask =>
                 {
-                    while (!stopped)
+                    foreach (int i in parentTask.Result)
                     {
-                        Console.WriteLine("Running...");
-                        Thread.Sleep(1000);
+                        Console.WriteLine(i);
                     }
-                }));
+                });
 
-           
-            t.Start();
+            finalTask.Wait();
 
-            //t.IsBackground = true;
-            //Demonstrate - as long as foreground thread is running, background will continue
-            //If you comment out the main thread below it should stop immediately (must comment out Join too)
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
 
-            stopped = true;
-            t.Join();
+
+            /*****************************************************************************/
+            //Create an array of tasks
+            Task[] tasks = new Task[3];
+
+
+
+            #endregion
+
+            #region :: My Experiments
+
+            //Experiment with Current Thread Properties - "Execution Context"
+            //You can name them. 
+            //new Thread(() =>
+            //{
+            //    Thread.CurrentThread.Name = "ThreadingMyEyebrows";
+            //    Console.WriteLine($"Thread Name A {__threadName}");
+            //    Console.WriteLine($"Thread Priority A {__threadPriority}, Thread State: {_threadingState}");
+            //    Thread.Sleep(1000);
+            //    Console.WriteLine($"Thread Millisecond A {_threadMillisecond}");
+
+            //}).Start();
+
+            ////Why does this line prevent the next thread from starting?
+            ////Thread.CurrentThread.Join();
+
+            //new Thread(() =>
+            //{
+            //    Thread.CurrentThread.Name = "ThreadingAndShreding";
+            //    Console.WriteLine($"Thread Name B {__threadName}");
+            //    Console.WriteLine($"Thread Prority B {__threadPriority}, Thread State: {_threadingState}");
+            //    Console.WriteLine($"Thread Millisecond B {_threadMillisecond}");
+
+            //}).Start();
+
+            #endregion
 
         }
 
+        #region Methods
         private static void Print(string message)
         {
             Console.WriteLine(message);
@@ -157,6 +404,9 @@ namespace MyTreadingProject
                 Thread.Sleep(sleep);
             }
         }
+
+        #endregion
     }
 }
+
 

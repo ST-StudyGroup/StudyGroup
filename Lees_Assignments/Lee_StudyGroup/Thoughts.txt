@@ -3,3 +3,9 @@
 Resources: http://www.albahari.com/threading/
 
 Calling a .Join on a thread is like calling an await on an async method - thoughts? 
+
+The difference between a [ThreadStatic] attribute on a variable and using a ThreadLocal variable -
+  [ThreadStatic] - the intial value of the variable is the same for every thread, but then each thread makes it's own copy that it can manipulate indipendantly without affecting the original value of the variable
+  ThreadLocal<T> - each tread has it's own local variable set to a particular data type, value for each threading instance may be different from the start
+
+  Calling Wait is equivalent to calling Join on a thread. It waits till the Task is finished before exiting the application.
