@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementMultithreading1.1", "ImplementMultithreading1.1.csproj", "{D0185D3B-E7E5-407C-BF0E-3A3A5D91D51D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleThreadTesting", "..\ConsoleThreadTesting\ConsoleThreadTesting.csproj", "{EB8F64C5-BE16-4668-8130-EE790C483AAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D0185D3B-E7E5-407C-BF0E-3A3A5D91D51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0185D3B-E7E5-407C-BF0E-3A3A5D91D51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0185D3B-E7E5-407C-BF0E-3A3A5D91D51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8F64C5-BE16-4668-8130-EE790C483AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8F64C5-BE16-4668-8130-EE790C483AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8F64C5-BE16-4668-8130-EE790C483AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8F64C5-BE16-4668-8130-EE790C483AAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

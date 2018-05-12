@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -27,6 +28,20 @@ namespace ImplementMultithreading1._1
             }
         }
 
+        public static Task SleepAsyncA(int millisecondsTimeout)
+        {
+            return Task.Run(() => Thread.Sleep(millisecondsTimeout));
+        }
+
+        public static Task SleepAsyncB(int millisecondsTimeout)
+        {
+            TaskCompletionSource<bool> tcs = null;
+            var t = new Timer(delegate { tcs.TrySetResult(true); }, null, -1, -1);
+            tcs = new TaskCompletionSource<bool>(t);
+            t.Change(millisecondsTimeout, -1);
+            return tcs.Task;
+        }
+
         public static void Main(string[] args)
         {
             var stopped = false;
@@ -41,37 +56,26 @@ namespace ImplementMultithreading1._1
                 }
             }));
 
-            Task task = Task.Run(() =>
+            Task<Int32[]> parent = Task.Run(() =>
             {
-                for (var i = 100; i >= 0; i--)
-                {
-                    Console.WriteLine("Something neat");
-                }
+                var results = new Int32[3];
+                new Task(() => results[0] = 0,
+                TaskCreationOptions.AttachedToParent).Start();
+                new Task(() => results[1] = 1,
+                TaskCreationOptions.AttachedToParent).Start();
+                new Task(() => results[2] = 2,
+                TaskCreationOptions.AttachedToParent).Start();
+                return results;
             });
 
-            Task<int> task2 = Task.Run(() =>
-            {
-                return 42;
-            });
+            var numbers = Enumerable.Range(0, 10);
 
-            task2.ContinueWith((i) =>
-            {
-                Console.WriteLine("Canceled");
-            }, TaskContinuationOptions.OnlyOnCanceled);
+            var parallelResult = numbers.AsParallel()
+            .Where(i => i % 2 == 0)
+            .ToArray();
 
-            task2.ContinueWith((i) =>
-            {
-                Console.WriteLine("Faulted");
-            }, TaskContinuationOptions.OnlyOnFaulted);
-
-            var completedTask = task2.ContinueWith((i) =>
-            {
-                Console.WriteLine("Completed");
-            }, TaskContinuationOptions.OnlyOnRanToCompletion);
-
-            completedTask.Wait();
-
-            Console.WriteLine(task2.Result);
+            foreach (int i in parallelResult)
+                Console.WriteLine(i);
         }
     }
 }
