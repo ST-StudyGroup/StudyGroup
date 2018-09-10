@@ -1,0 +1,6 @@
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\AsyncVsParallel\bin\Debug\AsyncVsParallel.exe.config
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\AsyncVsParallel\bin\Debug\AsyncVsParallel.exe
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\AsyncVsParallel\bin\Debug\AsyncVsParallel.pdb
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\AsyncVsParallel\obj\Debug\AsyncVsParallel.csproj.CoreCompileInputs.cache
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\AsyncVsParallel\obj\Debug\AsyncVsParallel.exe
+C:\Repos\StudyGroup\Matts_Assignments\ImplementMultithreading1.1\AsyncVsParallel\obj\Debug\AsyncVsParallel.pdb

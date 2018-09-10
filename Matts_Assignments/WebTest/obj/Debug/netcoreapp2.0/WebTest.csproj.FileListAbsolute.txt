@@ -1,0 +1,11 @@
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\bin\Debug\netcoreapp2.0\WebTest.deps.json
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\bin\Debug\netcoreapp2.0\WebTest.runtimeconfig.json
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\bin\Debug\netcoreapp2.0\WebTest.runtimeconfig.dev.json
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\bin\Debug\netcoreapp2.0\WebTest.dll
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\bin\Debug\netcoreapp2.0\WebTest.pdb
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\obj\Debug\netcoreapp2.0\WebTest.csprojAssemblyReference.cache
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\obj\Debug\netcoreapp2.0\WebTest.csproj.CoreCompileInputs.cache
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\obj\Debug\netcoreapp2.0\WebTest.AssemblyInfoInputs.cache
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\obj\Debug\netcoreapp2.0\WebTest.AssemblyInfo.cs
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\obj\Debug\netcoreapp2.0\WebTest.dll
+C:\Repos\StudyGroup\Matts_Assignments\WebTest\obj\Debug\netcoreapp2.0\WebTest.pdb
