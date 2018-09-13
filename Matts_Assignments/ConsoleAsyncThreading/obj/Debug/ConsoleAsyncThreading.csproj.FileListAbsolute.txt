@@ -1,0 +1,7 @@
+C:\Repos\StudyGroup\Matts_Assignments\ConsoleAsyncThreading\bin\Debug\ConsoleAsyncThreading.exe.config
+C:\Repos\StudyGroup\Matts_Assignments\ConsoleAsyncThreading\bin\Debug\ConsoleAsyncThreading.exe
+C:\Repos\StudyGroup\Matts_Assignments\ConsoleAsyncThreading\bin\Debug\ConsoleAsyncThreading.pdb
+C:\Repos\StudyGroup\Matts_Assignments\ConsoleAsyncThreading\obj\Debug\ConsoleAsyncThreading.csprojAssemblyReference.cache
+C:\Repos\StudyGroup\Matts_Assignments\ConsoleAsyncThreading\obj\Debug\ConsoleAsyncThreading.csproj.CoreCompileInputs.cache
+C:\Repos\StudyGroup\Matts_Assignments\ConsoleAsyncThreading\obj\Debug\ConsoleAsyncThreading.exe
+C:\Repos\StudyGroup\Matts_Assignments\ConsoleAsyncThreading\obj\Debug\ConsoleAsyncThreading.pdb
